@@ -1,0 +1,92 @@
+@import "../../global/BASE";
+
+.happyVoiceBox {
+    border: 1px solid #8a8245;
+    background-color: rgba(255, 255, 255, 0.9);
+    // background-color: white;
+    margin: 0 auto;
+    padding: 1em 1.6em 1.8em 1.6em;
+    color: $textCol;
+    @include pc {
+        height: 100%;
+    }
+}
+
+.happyVoiceBox_insideBox_headings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    position: relative;
+    line-height: 1.5em;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #8a8245;
+    }
+}
+
+.happyVoiceBox_insideBox_headings_ttl {
+    padding-left: 1.5em;
+    font-size: 1.6rem;
+    font-family: $font1Serif;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+.happyVoiceBox_insideBox_headings_ttl_bigTxt {
+    font-size: 2rem;
+    font-weight: $bold;
+}
+
+.happyVoiceBox_insideBox_headings_ttl_smallTxt {
+    font-size: 70%;
+    font-size: 1.5rem;
+}
+
+.happyVoiceBox_insideBox_headings_thumb {
+    width: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.happyVoiceBox_mainTxt {
+    padding-top: 1em;
+    font-family: $font2Sans;
+    font-weight: $regular;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
+}
+
+.happyVoiceArrow {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    &--prev {
+        left: 0;
+        transform: translateX(-25%);
+    }
+    &--nxt {
+        right: 0;
+        transform: translateX(25%);
+    }
+}

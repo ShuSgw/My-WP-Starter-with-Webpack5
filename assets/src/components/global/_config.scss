@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+// lighter, regular, medium, bold
+$font0Serif: "Noto Serif", serif;
+$font1Serif: "Noto Serif JP", serif;
+$font2Sans: "Noto Sans JP", sans-serif;
+$font3Sans: "Noto Sans", sans-serif;
+
+$textCol: #3d3d3d;
+$textCol2: #707070;
+// font-weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// // media querry
+$tab: 767px;
+$pc: 1200px;
+$mb: 614px;
+$sp: 400px;
+
+@mixin siteBaseWidth {
+    width: 90%;
+    margin: 0 auto;
+    @include pc {
+        max-width: 1100px;
+    }
+}
+
+$blueBaseCol: #65bfcd;
+// // box
+$desktopMaxContainer: 1200px;
+
+@mixin tab {
+    @media (min-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+.font_en {
+    font-family: $font2Sans !important;
+    font-weight: 400;
+}
+// @include pc {
+// }
