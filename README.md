@@ -7,13 +7,5 @@
 ![PurgeCSS 3.1.3](https://img.shields.io/badge/PurgeCSS-3.1.3-brightgreen)
 
 ## Setting
->- 
->- 
->- 
->- 
->- 
->- 
->- 
->- 
->- 
->- 
+>- webpack.config.js > projectFiles val > proxy > change local server
+>- use yarn
